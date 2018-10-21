@@ -1,0 +1,48 @@
+.sidebar{
+	-fx-background-color: rgb(58, 69, 88);
+}
+.sidebar-user-btn{
+	-fx-background-color: transparent;
+	-fx-background-radius: 0px;
+	-fx-text-fill: #b8b1b1;
+}
+.sidebar-btn{
+	-fx-background-color: transparent;
+	-fx-background-radius: 0px;
+	-fx-text-fill: #b8b1b1;
+	-fx-border-color: transparent;
+	-fx-border-width: 0px 0px 0px 3px
+}
+
+.sidebar-btn:hover{
+	-fx-background-color: transparent;
+	-fx-background-radius: 0px;
+	-fx-text-fill: #b8b1b1;
+	-fx-border-color: rgb(0,188,212);
+	-fx-border-width: 0px 0px 0px 3px
+}
+.sidebar-btn:pressed .sidebar-label{
+	-fx-text-fill: #0099ff;
+}
+.sidebar-btn:pressed .sidebar-btn-icon{
+	-fx-fill: #0099ff;
+}
+.sidebar-btn-icon{
+	-fx-fill: #b8b1b1;
+}
+.sidebar-btn-icon-2{
+	-fx-fill: rgb(0,143,130);
+}
+.sidebar-open-btn{
+	-fx-background-color: white;
+	-fx-fill: white;
+}
+.sidebar-open-btn:hover .sidebar-btn-icon{
+	-fx-fill: #afafaf;
+}
+.sidebar-open-btn:pressed .sidebar-btn-icon{
+	-fx-fill: #0099ff;
+}
+.sidebar-label{
+	-fx-text-fill: #b8b1b1;
+}

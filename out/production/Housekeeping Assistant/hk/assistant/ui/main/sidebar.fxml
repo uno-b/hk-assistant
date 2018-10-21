@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="180.0" styleClass="sidebar" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hk.assistant.ui.main.SidebarController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="85.0" prefWidth="180.0" style="-fx-background-color: rgb(0,188,212); -fx-text-fill: white;" styleClass="sidebar-label" text="Main" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" onMouseClicked="#loadAddGuest" prefHeight="80.0" prefWidth="192.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon glyphName="USER" size="2em" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <Label styleClass="sidebar-label" text="Add Guest" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="259.0" onMouseClicked="#loadAddHK" prefHeight="80.0" prefWidth="192.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon glyphName="HOME" size="2em" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <Label styleClass="sidebar-label" text="Add Housekeeper" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="236.0" onMouseClicked="#loadGuestTable" prefHeight="80.0" prefWidth="192.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon glyphName="TABLE" size="2em" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <Label styleClass="sidebar-label" text="Guest List" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="281.0" onMouseClicked="#loadHKTable" prefHeight="80.0" prefWidth="192.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon glyphName="TABLE" size="2em" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <Label styleClass="sidebar-label" text="Housekeeper List" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="191.0" onMouseClicked="#loadUncleanRoomTable" prefHeight="80.0" prefWidth="192.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon glyphName="QUESTION" size="2em" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <Label styleClass="sidebar-label" text="Unclean Rooms" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="236.0" onMouseClicked="#loadPrint" prefHeight="80.0" prefWidth="192.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon glyphName="FILE" size="2em" styleClass="sidebar-btn-icon">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <Label styleClass="sidebar-label" text="Print" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

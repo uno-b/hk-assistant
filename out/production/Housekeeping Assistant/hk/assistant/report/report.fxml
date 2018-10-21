@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hk.assistant.report.ReportController">
+   <children>
+      <JFXButton layoutX="176.0" layoutY="170.0" onAction="#print" prefHeight="33.0" prefWidth="178.0" text="View Report for Printing" />
+      <HBox alignment="CENTER" layoutY="85.0" prefHeight="63.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Date" />
+                  <JFXDatePicker fx:id="printHKDatePicker" prefHeight="28.0" prefWidth="190.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="178.0" style="-fx-border-radius: 5px; -fx-background-radius: 5px; -fx-border-color: BEBFC1; -fx-fill: blue;" stylesheets="@../styles.css">
+               <children>
+                  <FontAwesomeIcon glyphName="USER" size="1.7em" styleClass="sidebar-btn-icon-2">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+                  <TextField fx:id="printHKNameField" promptText="Housekeeper Name" style="-fx-background-color: transparent;" />
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="198.0" prefHeight="50.0" prefWidth="302.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#close" prefHeight="25.0" prefWidth="18.0" ripplerFill="WHITE" style="-fx-background-color: transparent;" text=" ">
+               <graphic>
+                  <FontAwesomeIcon fill="RED" glyphName="CLOSE" selectionFill="RED" size="1.7em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

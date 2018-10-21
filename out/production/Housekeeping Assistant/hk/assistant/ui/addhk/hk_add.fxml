@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hk.assistant.ui.addhk.HKAddController">
+   <children>
+      <VBox layoutX="85.0" prefHeight="547.0" prefWidth="498.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="name" labelFloat="true" opacity="0.74" promptText="Name" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="id" labelFloat="true" opacity="0.74" promptText="ID" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <Label text="Date of Birth" textFill="#7b7beb">
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <JFXDatePicker fx:id="dateOfBirth" layoutX="20.0" layoutY="268.0" opacity="0.74" prefHeight="42.0" prefWidth="571.0" promptText="Date of Birth" showWeekNumbers="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </JFXDatePicker>
+            <JFXTextField fx:id="phoneNum" labelFloat="true" layoutX="20.0" layoutY="130.0" opacity="0.74" promptText="Phone Number (If any)" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="roomNum" labelFloat="true" layoutX="20.0" layoutY="85.0" opacity="0.74" promptText="Dorm and Room Number (##-##)" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <Label text="Start Date" textFill="#7c7ceb">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <JFXDatePicker fx:id="startDate" opacity="0.74" prefHeight="42.0" prefWidth="571.0" promptText="Start Date" showWeekNumbers="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </JFXDatePicker>
+            <Label text="End Date" textFill="#7c7ceb">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <JFXDatePicker fx:id="endDate" layoutX="20.0" layoutY="130.0" opacity="0.74" prefHeight="42.0" prefWidth="571.0" promptText="End Date" showWeekNumbers="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </JFXDatePicker>
+            <HBox prefHeight="61.0" prefWidth="475.0">
+               <children>
+                  <Label text="Note: The dates are in the format dd/mm/yyyy">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </children></HBox>
+            <HBox prefHeight="43.0" prefWidth="498.0">
+               <children>
+                  <JFXButton fx:id="saveButton" onAction="#addBook" prefHeight="300.0" prefWidth="300.0" style="-fx-background-radius: 0px;" stylesheets="@../addguest/style.css" text="Save">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cancelButton" onAction="#cancel" prefHeight="300.0" prefWidth="300.0" style="-fx-background-radius: 0px;" stylesheets="@../addguest/style.css" text="Cancel">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="498.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#cancel" prefHeight="25.0" prefWidth="18.0" ripplerFill="WHITE" style="-fx-background-color: transparent;" text=" ">
+               <graphic>
+                  <FontAwesomeIcon fill="RED" glyphName="CLOSE" selectionFill="RED" size="1.7em" />
+               </graphic>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

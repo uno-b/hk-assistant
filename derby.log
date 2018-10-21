@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Oct 13 00:14:09 EET 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0166-6a21-261f-000002c32900 
+on database directory C:\Users\Dell\IdeaProjects\Housekeeping Assistant\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4629104a 
+Loaded from file:/C:/Users/Dell/IdeaProjects/Housekeeping%20Assistant/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=10.0.1+10
+user.dir=C:\Users\Dell\IdeaProjects\Housekeeping Assistant
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

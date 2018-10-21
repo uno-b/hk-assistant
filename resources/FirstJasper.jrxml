@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jasper_report_template" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="17acb371-8058-4398-89b6-900473bdb5c3">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="state" class="java.lang.String"/>
+	<field name="room" class="java.lang.String"/>
+	<field name="guestName" class="java.lang.String"/>
+	<field name="adults" class="java.lang.String"/>
+	<field name="teens" class="java.lang.String"/>
+	<field name="children" class="java.lang.String"/>
+	<field name="checkInDate" class="java.lang.String"/>
+	<field name="checkOutDate" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<title>
+		<band height="77">
+			<staticText>
+				<reportElement x="170" y="20" width="230" height="30" uuid="7f95b4ec-23a5-489e-a802-f99889593daa"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rooms to clean]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="-10" width="70" height="20" uuid="207c7aff-93bf-4f8a-b43d-b3d692a6fcc9"/>
+				<text><![CDATA[Housekeeper : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="490" y="-10" width="100" height="18" uuid="8b25262e-e63b-425e-872b-9cd98ba7ae39"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="3" width="535" height="30" backcolor="#70A9A9" uuid="c82c0ebf-b1fe-4e44-b77f-3fabe419781b"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#CCCCCC"/>
+				</box>
+				<text><![CDATA[ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3" width="136" height="15" uuid="5892ecff-b107-48eb-9809-02f545f92490"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="3" width="70" height="30" uuid="ba9ab5b7-3930-4871-bb84-91a972145bd3"/>
+				<text><![CDATA[Guest Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="3" width="60" height="30" uuid="c221670a-eb3e-459d-a00b-15e8e816d98e"/>
+				<text><![CDATA[Adults]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="3" width="60" height="30" uuid="bf7790dd-a1be-431b-8fd5-8f0d9f9aa58a"/>
+				<text><![CDATA[Teen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="3" width="60" height="30" uuid="e92ae0d5-5414-4033-805c-21502955ab7e"/>
+				<text><![CDATA[Children]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="3" width="70" height="30" uuid="07ae0b93-9bc0-40bf-83f7-fbfe4789c11a"/>
+				<text><![CDATA[Check-in Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="3" width="70" height="30" uuid="b792d844-df7b-4a07-82e0-b6a36d0d7b67"/>
+				<text><![CDATA[Check-out Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="535" height="14" backcolor="#E5ECF9" uuid="573064ed-4a04-47cd-8faa-8c63466b385f"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineColor="#CCCCCC"/>
+				</box>
+				<text><![CDATA[ ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="30" width="90" height="16" uuid="6a6167d0-68ee-4bc1-90ce-baf1634b6776"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="46" width="90" height="20" uuid="deaf3ba2-3614-4686-917a-6932f2aa4ddd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{room}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="29" width="100" height="37" uuid="7826060e-7644-4b57-ab01-76a947bc17be"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{guestName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="30" width="30" height="26" uuid="7d3971f8-207f-4ed8-9117-571ef62e46c4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{adults}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="30" width="29" height="27" uuid="b6aaf09e-48c1-4d44-b39d-c4f5ab7abb79"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{teens}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="258" y="29" width="38" height="32" uuid="2f62931b-cb2e-4db4-8dd9-46b80675e1bb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{children}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="28" width="100" height="30" uuid="f20fe1b3-4335-40aa-90cb-9376616bfd78"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{checkInDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="28" width="100" height="30" uuid="76df87c8-0b9b-4894-b5a7-94f8d76b6ecb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{checkOutDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="107">
+			<textField>
+				<reportElement x="450" y="74" width="125" height="25" uuid="3213b20d-e81d-4621-bd9f-e9cf504b053a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="74" width="61" height="25" uuid="80d2ff10-8788-4c16-b660-5bcf636b984a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Page]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="300" height="107" uuid="f578074b-558d-4d10-85c4-fdb7765bc57e"/>
+				<imageExpression><![CDATA["GTLC logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="80">
+			<staticText>
+				<reportElement x="10" y="18" width="100" height="30" uuid="01bee434-87d7-4d9e-8cf7-79844bbf0167"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Note : ]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="440" y="20" width="100" height="30" uuid="6513fc6d-e683-43e1-8f1c-d2954e42b170"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="440" y="36" width="100" height="30" uuid="bc54eba0-368a-444e-bf76-e97c64ef0228"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="369" y="20" width="70" height="30" uuid="c29575ff-965d-42fe-af41-28024813f05e"/>
+				<text><![CDATA[Creation Date and Time : ]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
