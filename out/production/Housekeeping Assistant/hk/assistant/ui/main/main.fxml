@@ -677,7 +677,7 @@
                                           </HBox>
                                           <HBox alignment="CENTER" prefHeight="300.0" prefWidth="300.0">
                                              <children>
-                                                <Button mnemonicParsing="false" text="Unassign Housekeeper from Selected Room">
+                                                <Button mnemonicParsing="false" onAction="#unassignHK" text="Unassign Housekeeper from Selected Room">
                                                    <HBox.margin>
                                                       <Insets left="140.0" />
                                                    </HBox.margin>

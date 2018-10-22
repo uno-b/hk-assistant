@@ -11,6 +11,7 @@ import javafx.stage.StageStyle;
 public class Main extends Application {
 
     public static Stage stage = null;
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
