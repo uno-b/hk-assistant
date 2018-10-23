@@ -21,18 +21,8 @@ Through this project, I have gained experience in JavaFX, Software Design, GUI D
 ### Features
 #### Main Window
 ![](images/Main.gif)
-
-
-
-
-
 #### Manage Tab
 ![](images/Manage-Tab.gif)
-
-
-
-
-
 #### Print Section
 ![](images/Print-Module.gif)
 
