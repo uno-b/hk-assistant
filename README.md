@@ -1,4 +1,6 @@
 # Housekeeping Assistant
+**Version 1.0.0**
+
 The project was chosen to be made for GTLC (Grand Teton Lodge Company) Housekeeping Department, since the previous software had bugs and the UI was outdated.
 
 The software lets the user manage housekeepers and guests, make assignments and view/print reports. Number of libraries were used.
@@ -14,11 +16,15 @@ Through this project, I have gained experience in JavaFX, Software Design, GUI D
   * [High Quality UI Controls](http://fxexperience.com/controlsfx/) - UI Control Library
   * [FontawesomeFX](https://bitbucket.org/Jerady/fontawesomefx) - Icon library
   * [Jasper Reports](https://community.jaspersoft.com/project/jasperreports-library/releases) - PDF Export
+
  ---
 ### Features
-##### Main Window
+#### Main Window
 ![](images/Main.gif)
-##### Manage Tab
+#### Manage Tab
 ![](images/Manage-Tab.gif)
-##### Print Section
+#### Print Section
 ![](images/Print-Module.gif)
+
+---
+Licensed by MIT[LICENSE]
