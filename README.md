@@ -7,8 +7,6 @@ The software lets the user manage housekeepers and guests, make assignments and 
 
 I started off following a JavaFX tutorial series on Library Management System Software from Youtube - [Genuine Coder Youtube Channel](https://www.youtube.com/playlist?list=PLhs1urmduZ29jTcE1ca8Z6bZNvH_39ayL), among many others. Thus, the software design pattern, and the libraries used are similar.
 
-Through this project, I have gained experience in JavaFX, Software Design, GUI Development, SQL Database, Debugging etc.
-
 ---
 ### Libraries Used
   * [JFoenix](https://github.com/jfoenixadmin/JFoenix) - JavaFX Design Library
